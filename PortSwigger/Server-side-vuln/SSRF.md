@@ -13,5 +13,16 @@
 
 - It mainly works on the application layer, because this vulnerability is caused by the application code written by the developer.
 
+
+### BLACK-LIST BASED INPUT FILTER
+- It works by maintaining a pre-defined list of know malicious or forbiddden patterns, such as **block input containing hostnames like 127.0.0.1 or localhost**
+- We can often bypass this by URL encoding, obuscation, case variations.
+ 
 ## WHITE-LIST BASED INPUT FILTER
+- It has a strict set of allowed characters or formats and rejects everything that doesn't match.
+- BYPASS TECHNIQUES
+   - **https://expected-host:fakepassword@evil-host** (In this the filter sees the expected-host but the browser goes to the evil-host)
+   - **https://evil-host#expected-host** (In this we'll use the # character to indicate the URL fragment)
+   - We can also use the sub-domain trick like http://expected-host.evil-host and we can also use the URL encoding trick.
+
 
