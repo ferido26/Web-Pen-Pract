@@ -23,3 +23,5 @@
 
 ### Data Breaches
 1.HaveIBeenPwned
+
+### https://securityheaders.com/   (reveals what all security are missing or misconfigured)
