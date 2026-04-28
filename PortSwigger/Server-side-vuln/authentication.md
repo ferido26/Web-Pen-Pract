@@ -1,1 +1,4 @@
+# AUTHENTICATION VULNERABILITIES
 
+## USERNAME ENUMERATION
+- To find real account before brute-force.
